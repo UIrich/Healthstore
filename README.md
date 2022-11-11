@@ -14,7 +14,7 @@
 </p>
 
 ## About
-It's a pharmacy project for a school project.
+It's a pharmacy project for a school homework.
 
 ## Built with
 
