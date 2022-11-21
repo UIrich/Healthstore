@@ -1,6 +1,8 @@
 import React from 'react';
 import {
   Flex,
+  Input,
+  Button,
   Box,
   chakra,
 } from '@chakra-ui/react';
@@ -30,12 +32,20 @@ export default function Products() {
         flex="1"
         borderRadius="md"
       >
+        <Input placeholder='Nome' width='auto' />
+        <Input placeholder='Marca' width='auto' />
+        <Input placeholder='Modelo' width='auto' />
 
         <Flex
           justify="space-between"
           align="center"
-          py="2"
+          py="5"
         >
+
+        <Input placeholder='Código' width='auto' />
+        <Input placeholder='Preço' width='auto' />
+        <Input placeholder='Estoque' width='auto' />
+
           <Flex
             flex="1"
             direction="row"
@@ -43,6 +53,9 @@ export default function Products() {
            >
           </Flex>
     </Flex>
+    <Button as={'a'} href={'/dashboard/products'} colorScheme={'blue'} variant={'solid'}>
+    Salvar
+    </Button>
     </Box>
     </Flex>
     </Box>

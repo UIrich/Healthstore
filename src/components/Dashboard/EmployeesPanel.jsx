@@ -1,6 +1,8 @@
 import React from 'react';
 import {
   Flex,
+  Input,
+  Button,
   Box,
   chakra,
 } from '@chakra-ui/react';
@@ -30,19 +32,34 @@ export default function Employees() {
         flex="1"
         borderRadius="md"
       >
+        <Input placeholder='Nome' width='auto' />
+        <Input placeholder='CPF' width='auto' />
+        <Input placeholder='E-mail' width='auto' />
+        <Input placeholder='Telefone' width='auto' />
+        <Input placeholder='Salário' width='auto' />
 
         <Flex
           justify="space-between"
           align="center"
-          py="2"
+          py="5"
         >
+
+        <Input placeholder='Cidade' width='auto' />
+        <Input placeholder='Estado' width='auto' />
+        <Input placeholder='Endereço' width='auto' />
+        <Input placeholder='Setor' width='auto' />
+
           <Flex
             flex="1"
             direction="row"
             align="center"
            >
+          
           </Flex>
     </Flex>
+    <Button as={'a'} href={'/dashboard/employees'} colorScheme={'blue'} variant={'solid'}>
+    Salvar
+    </Button>
     </Box>
     </Flex>
     </Box>
