@@ -28,7 +28,7 @@ It's a pharmacy project for a school homework.
 $ git clone https://github.com/UIrich/Healthstore.git
 $ cd Healthstore
 $ npm install
-$ npm start
+$ npm run dev
 ```
 
 
